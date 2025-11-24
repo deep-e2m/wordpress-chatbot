@@ -1,0 +1,72 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "custom/pricing-table",
+  "version": "1.0.0",
+  "title": "Pricing Table",
+  "category": "design",
+  "icon": "money-alt",
+  "description": "A customizable three-column pricing table with featured plan highlight.",
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"]
+  },
+  "attributes": {
+    "columns": {
+      "type": "array",
+      "default": [
+        {
+          "title": "Basic",
+          "description": "Perfect for starters",
+          "price": "$9",
+          "priceSubtext": "per month",
+          "buttonText": "Get Started",
+          "buttonUrl": "#",
+          "features": ["Feature 1", "Feature 2", "Feature 3"]
+        },
+        {
+          "title": "Professional",
+          "description": "Most popular choice",
+          "price": "$29",
+          "priceSubtext": "per month",
+          "buttonText": "Get Started",
+          "buttonUrl": "#",
+          "features": ["All Basic features", "Feature 4", "Feature 5", "Feature 6"]
+        },
+        {
+          "title": "Enterprise",
+          "description": "For large teams",
+          "price": "$99",
+          "priceSubtext": "per month",
+          "buttonText": "Contact Us",
+          "buttonUrl": "#",
+          "features": ["All Pro features", "Feature 7", "Feature 8", "Feature 9"]
+        }
+      ]
+    },
+    "highlightedColumn": {
+      "type": "number",
+      "default": 1
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#f9f9f9"
+    },
+    "highlightColor": {
+      "type": "string",
+      "default": "#4a90e2"
+    },
+    "buttonColor": {
+      "type": "string",
+      "default": "#4a90e2"
+    },
+    "buttonTextColor": {
+      "type": "string",
+      "default": "#ffffff"
+    }
+  },
+  "textdomain": "pricing-table",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css"
+}

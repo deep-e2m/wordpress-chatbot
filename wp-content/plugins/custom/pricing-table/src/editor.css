@@ -1,0 +1,128 @@
+.wp-block-custom-pricing-table .pricing-table-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.wp-block-custom-pricing-table .pricing-column {
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.wp-block-custom-pricing-table .pricing-column.highlighted {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.wp-block-custom-pricing-table .recommended-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff6b6b;
+  color: #fff;
+  padding: 4px 15px;
+  border-radius: 15px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.wp-block-custom-pricing-table .pricing-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 15px 0 8px;
+}
+
+.wp-block-custom-pricing-table .pricing-description {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.wp-block-custom-pricing-table .pricing-price {
+  margin: 20px 0;
+}
+
+.wp-block-custom-pricing-table .price-amount {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.wp-block-custom-pricing-table .price-subtext {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+.wp-block-custom-pricing-table .pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.wp-block-custom-pricing-table .feature-item {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.wp-block-custom-pricing-table .feature-item span {
+  flex: 1;
+}
+
+.wp-block-custom-pricing-table .remove-feature {
+  opacity: 0;
+  transition: opacity 0.2s;
+  min-width: auto !important;
+  padding: 0 8px !important;
+  height: 24px !important;
+}
+
+.wp-block-custom-pricing-table .feature-item:hover .remove-feature {
+  opacity: 1;
+}
+
+.wp-block-custom-pricing-table .add-feature-btn {
+  margin: 10px 0;
+  font-size: 13px;
+}
+
+.wp-block-custom-pricing-table .pricing-button-wrapper {
+  margin-top: 20px;
+}
+
+.wp-block-custom-pricing-table .button-url-input {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.wp-block-custom-pricing-table .button-url-input input {
+  font-size: 12px;
+  padding: 6px 10px;
+}
+
+.wp-block-custom-pricing-table .pricing-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #4a90e2;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.editor-styles-wrapper .wp-block-custom-pricing-table .pricing-column:not(.highlighted) .pricing-description {
+  color: #666;
+}
