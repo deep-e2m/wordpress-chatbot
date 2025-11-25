@@ -1,0 +1,19 @@
+.wp-block-custom-pricing-table .pricing-column {
+  min-height: 400px;
+}
+
+.wp-block-custom-pricing-table .pricing-button {
+  cursor: text;
+}
+
+.wp-block-custom-pricing-table .rich-text {
+  outline: none;
+}
+
+.wp-block-custom-pricing-table .pricing-features .rich-text[data-is-placeholder-visible="true"] {
+  opacity: 0.6;
+}
+
+.components-panel__body .components-color-palette {
+  margin-bottom: 20px;
+}

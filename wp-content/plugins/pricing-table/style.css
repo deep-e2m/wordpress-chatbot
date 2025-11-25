@@ -1,0 +1,157 @@
+.wp-block-custom-pricing-table {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.pricing-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: stretch;
+}
+
+.pricing-column {
+  position: relative;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-column:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-featured {
+  transform: scale(1.05);
+  z-index: 1;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.featured-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  color: #4F46E5;
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.pricing-description {
+  font-size: 16px;
+  margin: 0 0 25px 0;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.pricing-price {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0 0 30px 0;
+  text-align: center;
+  line-height: 1;
+}
+
+.pricing-features {
+  flex-grow: 1;
+  margin: 0 0 30px 0;
+  line-height: 2;
+  font-size: 15px;
+}
+
+.pricing-features br {
+  display: block;
+  content: '';
+  margin: 8px 0;
+}
+
+.pricing-button {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  border: none;
+}
+
+.pricing-button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+a.pricing-button {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .pricing-table {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .pricing-featured {
+    transform: scale(1);
+    order: -1;
+  }
+
+  .pricing-column {
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wp-block-custom-pricing-table {
+    padding: 0 15px;
+    margin: 30px auto;
+  }
+
+  .pricing-column {
+    padding: 30px 20px;
+  }
+
+  .pricing-title {
+    font-size: 24px;
+  }
+
+  .pricing-price {
+    font-size: 40px;
+  }
+
+  .pricing-description {
+    font-size: 14px;
+  }
+
+  .pricing-features {
+    font-size: 14px;
+  }
+
+  .pricing-button {
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+}

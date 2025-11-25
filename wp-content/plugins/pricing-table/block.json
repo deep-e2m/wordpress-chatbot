@@ -1,0 +1,116 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "custom/pricing-table",
+  "version": "1.0.0",
+  "title": "Pricing Table",
+  "category": "design",
+  "icon": "money-alt",
+  "description": "A customizable three-column pricing table with featured plan highlighting.",
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"]
+  },
+  "attributes": {
+    "plan1Title": {
+      "type": "string",
+      "default": "Basic"
+    },
+    "plan1Description": {
+      "type": "string",
+      "default": "Perfect for starters"
+    },
+    "plan1Price": {
+      "type": "string",
+      "default": "$9"
+    },
+    "plan1Features": {
+      "type": "string",
+      "default": "Feature 1<br>Feature 2<br>Feature 3"
+    },
+    "plan1ButtonText": {
+      "type": "string",
+      "default": "Get Started"
+    },
+    "plan1ButtonUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "plan2Title": {
+      "type": "string",
+      "default": "Professional"
+    },
+    "plan2Description": {
+      "type": "string",
+      "default": "Most popular choice"
+    },
+    "plan2Price": {
+      "type": "string",
+      "default": "$29"
+    },
+    "plan2Features": {
+      "type": "string",
+      "default": "Everything in Basic<br>Feature 4<br>Feature 5<br>Priority Support"
+    },
+    "plan2ButtonText": {
+      "type": "string",
+      "default": "Get Started"
+    },
+    "plan2ButtonUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "plan3Title": {
+      "type": "string",
+      "default": "Enterprise"
+    },
+    "plan3Description": {
+      "type": "string",
+      "default": "For large teams"
+    },
+    "plan3Price": {
+      "type": "string",
+      "default": "$99"
+    },
+    "plan3Features": {
+      "type": "string",
+      "default": "Everything in Pro<br>Feature 6<br>Feature 7<br>Dedicated Support"
+    },
+    "plan3ButtonText": {
+      "type": "string",
+      "default": "Get Started"
+    },
+    "plan3ButtonUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "featuredBgColor": {
+      "type": "string",
+      "default": "#4F46E5"
+    },
+    "featuredTextColor": {
+      "type": "string",
+      "default": "#FFFFFF"
+    },
+    "normalBgColor": {
+      "type": "string",
+      "default": "#FFFFFF"
+    },
+    "normalTextColor": {
+      "type": "string",
+      "default": "#1F2937"
+    },
+    "buttonColor": {
+      "type": "string",
+      "default": "#4F46E5"
+    },
+    "buttonTextColor": {
+      "type": "string",
+      "default": "#FFFFFF"
+    }
+  },
+  "textdomain": "custom-pricing-table",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
