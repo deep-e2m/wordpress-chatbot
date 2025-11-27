@@ -1,0 +1,12 @@
+{
+  "name": "custom/testimonial-carousel",
+  "version": "1.0.0",
+  "description": "testimonial carousel with three visible slides, autoplay with configurable speed and pause-on-hover,",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^27.0.0"
+  }
+}

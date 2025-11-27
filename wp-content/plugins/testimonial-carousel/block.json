@@ -1,0 +1,93 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "custom/testimonial-carousel",
+  "version": "1.0.0",
+  "title": "Testimonial Carousel",
+  "category": "widgets",
+  "icon": "testimonial",
+  "description": "SEO-optimized testimonial carousel with video support and accessibility features",
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"]
+  },
+  "attributes": {
+    "testimonials": {
+      "type": "array",
+      "default": [
+        {
+          "id": "1",
+          "text": "This product transformed our business completely. Highly recommended!",
+          "authorName": "John Doe",
+          "authorRole": "CEO",
+          "authorCompany": "TechCorp",
+          "linkedinUrl": "",
+          "rating": 5,
+          "imageUrl": "",
+          "videoUrl": "",
+          "videoThumbnail": ""
+        },
+        {
+          "id": "2",
+          "text": "Outstanding service and support. The team went above and beyond our expectations.",
+          "authorName": "Jane Smith",
+          "authorRole": "Marketing Director",
+          "authorCompany": "Growth Inc",
+          "linkedinUrl": "",
+          "rating": 5,
+          "imageUrl": "",
+          "videoUrl": "",
+          "videoThumbnail": ""
+        },
+        {
+          "id": "3",
+          "text": "We saw immediate results after implementing this solution. Best investment we made.",
+          "authorName": "Mike Johnson",
+          "authorRole": "Founder",
+          "authorCompany": "Startup Labs",
+          "linkedinUrl": "",
+          "rating": 5,
+          "imageUrl": "",
+          "videoUrl": "",
+          "videoThumbnail": ""
+        }
+      ]
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoplaySpeed": {
+      "type": "number",
+      "default": 5000
+    },
+    "pauseOnHover": {
+      "type": "boolean",
+      "default": true
+    },
+    "lazyLoad": {
+      "type": "boolean",
+      "default": true
+    },
+    "textClampLines": {
+      "type": "number",
+      "default": 4
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#333333"
+    },
+    "accentColor": {
+      "type": "string",
+      "default": "#0073aa"
+    }
+  },
+  "textdomain": "testimonial-carousel",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css"
+}
